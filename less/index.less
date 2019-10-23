@@ -29,6 +29,22 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+@primarycolor: #9cb2bc;
+
+@primaryfont: 'Nunito', sans-serif;
+
+.column-center {
+	display: flex;
+	flex-direction: column;
+	align-items: ;
+}
+
+.standard-font {
+	color: @primarycolor;
+	font-family: @primaryfont;
+}
+
 body {
 	line-height: 1;
 }
@@ -50,10 +66,105 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
     height: 100%;
 }
+
+html {
+	font-size: 62.5%;
+}
+
+.main-container {
+	width: 80vw;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid lightgray;
+
+	.profile-bar {
+		width: 30%;
+		background-color: #0F3764;
+		.column-center();
+	}
+
+	.information {
+		width: 70%;
+	}
+
+
+}
+
+.identity {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.self-image-container {
+		width: 100%;
+
+		img {
+			width: 60%;
+			height: 60%;
+			border-radius: 50%;
+			padding: 3%;
+		}
+	}
+
+	h1 {
+		margin: 1.5rem 0;
+		font-size: 2.2rem;
+		text-align: center;
+		.standard-font();
+	}
+}
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+
+
+	.contact-info-item {
+		margin: 0 5%;
+		padding: 5% 1%;
+		display: flex;
+
+
+		// i {
+		// 	text-decoration: none;
+		// 	color: @primarycolor;
+		// 	font-size: 1.5rem;
+		// 	font-family: @primaryfont;
+		// 	padding-right: 2rem;
+		// }
+
+
+		p a {
+			text-decoration: none;
+			.standard-font();
+			font-size: 1.5rem;
+			
+		}
+	}
+}
+
+.nav-bar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	a {
+		text-decoration: none;
+		font-size: 1.5rem;
+		margin: 1.5rem 0;
+		.standard-font();
+		
+	}
+}
+
+
 

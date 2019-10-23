@@ -107,7 +107,7 @@ section {
 .column-center {
   display: flex;
   flex-direction: column;
-  align-items: ;
+  align-items: center;
 }
 .standard-font {
   color: #9cb2bc;
@@ -147,7 +147,7 @@ html {
   font-size: 62.5%;
 }
 .main-container {
-  width: 80vw;
+  width: 60vw;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -158,48 +158,65 @@ html {
   background-color: #0F3764;
   display: flex;
   flex-direction: column;
-  align-items: ;
+  align-items: center;
+  padding: 0 1%;
 }
 .main-container .information {
   width: 70%;
 }
 .identity {
+  margin-top: 7%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
 }
 .identity .self-image-container {
-  width: 100%;
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
 }
 .identity .self-image-container img {
-  width: 60%;
-  height: 60%;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  padding: 3%;
+  padding: 1%;
+  border: 1px solid #9cb2bc;
 }
 .identity h1 {
-  margin: 1.5rem 0;
+  margin-top: 1.5rem;
   font-size: 2.2rem;
   text-align: center;
   color: #9cb2bc;
   font-family: 'Nunito', sans-serif;
 }
 .contact-info {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  border-top: 1px solid #9cb2bc;
+  border-bottom: 1px solid #9cb2bc;
 }
 .contact-info .contact-info-item {
-  margin: 0 5%;
   padding: 5% 1%;
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contact-info .contact-info-item i {
+  color: #9cb2bc;
+  font-size: 1.5rem;
+  width: 15%;
+}
+.contact-info .contact-info-item p {
+  width: 83%;
 }
 .contact-info .contact-info-item p a {
   text-decoration: none;
   color: #9cb2bc;
   font-family: 'Nunito', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .nav-bar {
   display: flex;
@@ -212,4 +229,27 @@ html {
   margin: 1.5rem 0;
   color: #9cb2bc;
   font-family: 'Nunito', sans-serif;
+}
+.information {
+  padding: 2% 5%;
+  width: 100%;
+}
+.information .summary {
+  margin-top: 2%;
+  border-bottom: 1px solid #9cb2bc;
+}
+.information .summary h1 {
+  text-align: center;
+  color: #9cb2bc;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 2%;
+}
+.information .summary p {
+  text-align: center;
+  color: #9cb2bc;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.4rem;
+  padding: 2%;
 }

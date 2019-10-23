@@ -30,7 +30,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-@primarycolor: #9cb2bc;
+@profilecolor: whitesmoke;
+
+@infocolor: 	#91A3B0;
 
 @primaryfont: 'Nunito', sans-serif;
 
@@ -40,8 +42,13 @@ footer, header, hgroup, menu, nav, section {
 	align-items: center;
 }
 
-.standard-font {
-	color: @primarycolor;
+.profile-font {
+	color: @profilecolor;
+	font-family: @primaryfont;
+}
+
+.info-font {
+	color: @infocolor;
 	font-family: @primaryfont;
 }
 
@@ -115,7 +122,7 @@ html {
 			height: 100%;
 			border-radius: 50%;
 			padding: 1%;
-			border: 1px solid @primarycolor;
+			border: 1px solid @profilecolor;
 		}
 	}
 
@@ -123,7 +130,7 @@ html {
 		margin-top: 1.5rem;
 		font-size: 2.2rem;
 		text-align: center;
-		.standard-font();
+		.profile-font();
 	}
 }
 
@@ -132,8 +139,8 @@ html {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	border-top: 1px solid @primarycolor;
-	border-bottom: 1px solid @primarycolor;
+	border-top: 1px solid @profilecolor;
+	border-bottom: 1px solid @profilecolor;
 
 
 	.contact-info-item {
@@ -144,7 +151,7 @@ html {
 
 
 		i {
-			color: @primarycolor;
+			color: @profilecolor;
 			font-size: 1.5rem;
 			width: 15%;
 		}
@@ -156,9 +163,13 @@ html {
 
 		p a {
 			text-decoration: none;
-			.standard-font();
+			.profile-font();
 			font-size: 1.4rem;
 			
+		}
+
+		p a:hover {
+			color: @infocolor
 		}
 	}
 }
@@ -172,7 +183,11 @@ html {
 		text-decoration: none;
 		font-size: 1.5rem;
 		margin: 1.5rem 0;
-		.standard-font();
+		.profile-font();
+	}
+
+	a:hover {
+		color: @infocolor;
 	}
 }
 
@@ -182,21 +197,21 @@ html {
 
 	.summary {
 		margin-top: 2%;
-		border-bottom: 1px solid @primarycolor;
+		border-bottom: 1px solid @infocolor;
 
 		h1 {
 			text-align: center;
-			.standard-font();
 			font-weight: bold;
 			font-size: 2rem;
 			padding: 2%;
+			.info-font();
 		}
 
 		p {
 			text-align: center;
-			.standard-font();
 			font-size: 1.4rem;
 			padding: 2%;
+			.info-font();
 		}
 
 	}

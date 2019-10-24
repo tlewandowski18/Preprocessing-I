@@ -102,11 +102,24 @@ html {
 		width: 70%;
 	}
 
+	@media (max-width: 1300px) {
+		width: 70vw;
+	}
+
+	@media (max-width: 1150px) {
+		width: 80vw;
+	}
+
+	@media (max-width: 1000px) {
+		width: 90vw;
+	}
+
 
 }
 
 .identity {
 	margin-top: 7%;
+	padding-bottom: 7%;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -202,18 +215,62 @@ html {
 		h1 {
 			text-align: center;
 			font-weight: bold;
-			font-size: 2rem;
+			font-size: 1.4rem;
 			padding: 2%;
 			.info-font();
 		}
 
 		p {
 			text-align: center;
-			font-size: 1.4rem;
-			padding: 2%;
+			font-size: 1.2rem;
+			padding-bottom: 2%;
 			.info-font();
 		}
 
+	}
+}
+
+.work {
+	.info-font();
+	padding: 2% 0;
+	width: 100%;
+
+	h1 {
+		font-weight: bold;
+		font-size: 1.4rem;
+	}
+}
+
+.work-item {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 2% 0;
+
+
+	.work-item-time {
+		font-size: 1.4rem;
+		width: 20%;
+
+	}
+
+	.work-item-description {
+		width: 75%;
+
+		h3 {
+			font-size: 1.4rem;
+			font-weight: bold;
+		}
+
+		h4 {
+			font-size: 1.4rem;
+			padding: 2% 0;
+
+		}
+
+		p {
+			font-size: 1.2rem;
+		}
 	}
 }
 
